@@ -7,7 +7,7 @@ source $CWD/common.bash
 
 # Install python dependencies for running the tests (not building the docs).
 log_info "Installing python test dependencies."
-pip install -r $EXM_DIR/requirements.txt
+pip install $CHPL_PIP_INSTALL_PARAMS -r $EXM_DIR/requirements.txt
 
 log_info "Moving to: ${EXM_DIR}"
 cd $EXM_DIR
